@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Default font */
+}
+
+/* Header Section */
+h1 {
+    color: #ffcc00; /* Yellow color */
+    font-family: Merriweather; /* Custom font for h1 */
+}
+
+/* Gradient background for the body */
+body {
+    background: linear-gradient(#fdf5e6, #d1c7e0); 
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Vertically center content */
+    padding: 15px 30px;
+    background: linear-gradient(#4b0082, #6a1b9a); /* Cadbury purple gradient */
+    color: #fff; /* White text color */
+}
+
+/* Logo height */
+.logo img {
+    height: 50px; 
+}
+
+/* Navbar Styling */
+.navbar ul {
+    display: flex;
+    list-style: none; 
+    position: relative;
+}
+
+/* Navbar List Item Styling */
+.navbar ul li {
+    margin: 0 15px; 
+    position: relative;
+}
+
+/* Navbar Links Styling */
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+/* Navbar Hover Effect */
+.navbar ul li a:hover {
+    color: red; 
+}
+
+/* CSS for Dropdown Menu */
+.dropdown .submenu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #4b0082; /* Purple background */
+    padding: 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000;
+    min-width: 150px; 
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Submenu Items */
+.submenu li {
+    margin: 0;
+    padding: 5px 15px; /* Inner padding */
+}
+
+.submenu li a {
+    color: #fff; /* White text */
+    font-size: 14px;
+    font-weight: normal;
+    display: block; 
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Submenu Hover Effect */
+.submenu li a:hover {
+    background-color: #ffd700; /* Yellow background */
+    color: #4b0082; /* Purple text */
+    border-radius: 3px;
+}
+
+/* Call-to-Action Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 10px; /* Gap between buttons */
+}
+
+
+/* CSS for Login and Sign up */
+.login,.signup {
+    background-color: #ffcc00; /* Yellow background */
+    color: white; /* White text */
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+.login:hover,.signup:hover {
+    background-color: #d6182b; /* Darker red on hover */
+    color: white;
+}
+
+/* Content Section */
+.content {
+    background: linear-gradient(#4b0082, #6a1b9a); /* Cadbury purple gradient */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 40px auto; /* Center align */
+    padding: 20px;
+    gap: 40px; 
+}
+
+.text-content {
+    flex: 1; /* Equal width with sibling */
+    color: white; /* White text */
+    padding: 20px;
+}
+
+/* Styling for main heading in content */
+.text-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+/* Styling for paragraph text */
+.text-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: Dosis; /* Custom font for paragraph */
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text */
+    background-color: #ffcc00; /* Yellow background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: #d6182b; /* Dark red on hover */
+}
+
+/* Video Content Styling */
+.video-content {
+    flex: 1; /* Equal width with text-content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-content video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+ /* Candy Funbox Section */
+ .candy-funbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: 40px auto;
+    background: #4b0082; 
+    border-radius: 10px;/*border radius*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1400px;
+    text-align: center;
+  }
+   /* Style for the left section of the Candy Funbox */
+   .funbox-left {
+    flex: 1; 
+    color: #ffd700; /* Gold color for text */
+    padding: 20px; 
+  }
+  
+  /* Style for the heading in the left section */
+  .funbox-left h2 {
+    font-size: 40px; /* Large font size for the heading */
+    margin-bottom: 20px; 
+    font-family: Merriweather; 
+    font-weight: bold; /* Makes the heading bold */
+  }
+  
+  /* Style for the paragraph text in the left section */
+  .funbox-left p {
+    font-size: 22px;
+    line-height: 1.6; /* Adjusts the spacing between lines */
+    margin-bottom: 30px; 
+    color: white; /* White color for the paragraph text */
+    font-family: Dosis; 
+    line-height: 2em; 
+  }
+  
+  /* Style for the "Funbox" button */
+  .funbox-btn {
+    text-decoration: none; /* Removes underline from links */
+    background-color: #ffcc00; 
+    color: white; /* White text color */
+    padding: 12px 25px;
+    font-size: 18px; 
+    font-weight: bold; /* Bold text for emphasis */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s; /* Smooth hover transition effect */
+  }
+  
+  /* Hover effect for the "Funbox" button */
+  .funbox-btn:hover {
+    background-color: #d6182b; 
+  }
+  
+  /* Style for the right section of the Candy Funbox */
+  .funbox-right {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+  }
+  
+  /* Container for images in the Candy Funbox */
+  .image-container {
+    display: flex;
+    gap: 150px;
+    justify-content: center; /* Centers the image container */
+  }
+  
+  /* Wrapper for each image with hover*/
+  .image-wrapper {
+    position: relative; 
+    width: 300px; /* Sets the width  */
+    height: 200px; /* Sets the height  */
+  }
+  
+  /* image style */
+  .image {
+    width: 100%; 
+    height: 100%; 
+    transition: opacity 0.3s ease; /* Smooth transition effect for opacity */
+  }
+  
+  /* Hover image style (initially hidden) */
+  .hover-image {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    opacity: 0; 
+  }
+  
+  /* Fade out the default image on hover */
+  .image-wrapper:hover .image {
+    opacity: 0; /* Makes the default image invisible */
+  }
+  
+  /* Fade in the hover image on hover */
+  .image-wrapper:hover .hover-image {
+    opacity: 1; /* Makes the hover image visible */
+  }
+
+  /* Main section styling */
+  .content2 {
+    background: linear-gradient(to right, #4b0082, #6a1b9a); /* Purple gradient */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 40px;
+    border-radius: 10px; /* Optional rounded corners */
+    color: #ffd700;
+  }
+  .text-content2 {
+    flex: 1;
+    text-align: center; /* Ensures text aligns to the right */
+    padding: 20px;
+  }
+  /* For h2 */
+  .text-content2 h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: DynaPuff;
+    font-weight: bold;
+  }
+  /* CSS for Paragraph in text-content Class */
+  .text-content2 p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: Sriracha;
+  }
+  /* CSS for imagechris Class*/
+  .imagechris {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Sets image */
+  .imagechris img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional for rounded corners */
+  }
+  /* CSS for Footer */
+  footer {
+    background-color: #4b0082;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Section */
+  .footer-logo {
+    flex: 1;
+    text-align: center;
+  }
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  /* Navigation Links Section */
+  .footer-links {
+    flex: 1;
+    text-align: left;
+  }
+  /* CSS for h3 text */
+  .footer-links h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  /* Styling for links */
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  .footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  /* Set hover effect */
+  .footer-links ul li a:hover {
+    color: #ffcc00; /* Yellow hover effect */
+  }
+  
+  /* Contact Form Section */
+  .footer-contact {
+    flex: 1;
+    text-align: left;
+  }
+  .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .footer-contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-contact input[type="text"],
+  .footer-contact input[type="email"],
+  .footer-contact input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  /* For button */
+  .footer-contact button {
+    padding: 12px 20px;
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .footer-contact button:hover {
+    background-color: #d6182b;
+  }
+
+/* Media Queries */
+/* Adjust layout for smaller screens (480px and below) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Stack header items vertically */
+        text-align: center;
+    }
+    .navbar ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+    .content {
+        flex-direction: column; /* Stack content sections */
+    }
+}
+ /* For screens between 481px and 768px */
+ @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+    .navbar ul {
+      flex-direction: column;
+    }
+    .cta-buttons {
+      flex-direction: column;
+      gap: 5px;
+    }
+    .content, .content2 {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  /* For screens between 769px and 1024px */
+  @media (max-width: 1024px) {
+    .content, .content2 {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
